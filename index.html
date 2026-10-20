@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Туристическое агентство «Меридиан»: горячие направления, подбор туров, визовая поддержка и страхование. Автор сайта — Кабанов Артём Геннадьевич.">
+    <title>Кабанов А. Г. — туристическое агентство «Меридиан»</title> <!-- п. 1.2: в &lt;title&gt; внесены свои данные -->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- п. 1: подключаем внешний файл стилей -->
+</head>
+<body>
+
+<!-- Верхняя служебная полоса -->
+<div class="topbar">
+    <div class="topbar-inner">
+        <span>Туристическое агентство «Меридиан» · Краснодар</span>
+        <span><a href="mailto:artemkabanov200@gmail.com">artemkabanov200@gmail.com</a> · +7 (991) 538-02-85</span>
+    </div>
+</div>
+
+<!-- Шапка сайта: логотип и название -->
+<header class="masthead">
+    <div class="masthead-inner">
+        <img class="logo" src="images/logo.png" alt="Логотип туристического агентства «Меридиан»">
+        <div>
+            <p class="site-title">Туристическое агентство «Меридиан»</p>
+            <p class="site-sub">Туры по России и за рубеж · подбор, визы, страхование · сайт Кабанова А. Г.</p>
+        </div>
+        <span class="site-badge">Сайт турагентства</span>
+    </div>
+</header>
+
+<!-- Главное меню: три страницы сайта -->
+<nav class="mainnav" aria-label="Главное меню">
+    <ul>
+        <li><a class="active" href="index.html" aria-current="page">Главная</a></li>
+        <li><a href="index01.html">Туры и цены</a></li>
+        <li><a href="index02.html">О компании</a></li>
+        <li><a href="index02.html#conclusion">Вывод по работе</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <!-- Первый экран: заголовок, текст, фотография направления -->
+    <section class="hero hero--travel">
+        <div>
+            <p class="kicker">Добро пожаловать</p>
+            <!-- изменено: вместо &lt;h1 align=center&gt;&lt;u&gt; — класс .textstyle0 и строгий деловой цвет -->
+            <h1 class="textstyle0">Путешествие,<br>которое хочется<br>повторить</h1>
+            <!-- изменено: размер шрифта 5, &lt;b&gt; и &lt;i&gt; заменены на классы CSS -->
+            <p class="lead">«Меридиан» подбирает туры под ваш бюджет и даты: пляжный отдых, экскурсионные
+                маршруты и поездки по России. Мы берём на себя бронирование отеля и перелёта, оформление
+                визы и страховки, а вы получаете готовый маршрут в одном документе.</p>
+            <p class="btn-row">
+                <a class="btn btn-primary" href="index01.html">Смотреть туры и цены</a>
+                <a class="btn btn-outline" href="index02.html">О компании</a>
+            </p>
+        </div>
+        <div>
+            <!-- п. 1.4: рисунок заменён; размер и положение задаются стилями -->
+            <img class="hero-photo" src="images/hero-beach.jpg" alt="Побережье с белым песком и бирюзовой водой" width="688" height="384">
+        </div>
+    </section>
+
+    <!-- Цифры о компании -->
+    <section class="section">
+        <h2 class="section-title">Агентство в цифрах</h2>
+        <div class="rule"></div>
+        <div class="facts">
+            <div class="fact"><b>12</b><span>лет на рынке туризма</span></div>
+            <div class="fact"><b>48</b><span>направлений в каталоге</span></div>
+            <div class="fact"><b>6 400</b><span>туристов отправлено</span></div>
+            <div class="fact"><b>4,9</b><span>средняя оценка клиентов</span></div>
+        </div>
+    </section>
+
+    <!-- Горячие направления -->
+    <section class="section">
+        <h2 class="section-title">Горячие направления</h2>
+        <div class="rule"></div>
+        <div class="card-grid">
+
+            <article class="tour-card">
+                <img src="images/turkey.jpg" alt="Отель на берегу Средиземного моря в Турции" width="688" height="384">
+                <div class="tour-body">
+                    <span class="tour-badge">Хит сезона</span>
+                    <h3 class="tour-title">Турция · Анталья</h3>
+                    <p class="tour-meta">7 ночей · 5★ · всё включено · вылет из Краснодара</p>
+                    <p class="tour-bottom">
+                        <span class="price">42 900 ₽ <small>/ чел.</small></span>
+                        <a href="index01.html#turkey">Подробнее →</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="tour-card">
+                <img src="images/egypt.jpg" alt="Коралловый риф и пляж Красного моря в Египте" width="688" height="384">
+                <div class="tour-body">
+                    <span class="tour-badge">Море круглый год</span>
+                    <h3 class="tour-title">Египет · Шарм-эль-Шейх</h3>
+                    <p class="tour-meta">8 ночей · 5★ · всё включено · дайвинг-центр</p>
+                    <p class="tour-bottom">
+                        <span class="price">58 400 ₽ <small>/ чел.</small></span>
+                        <a href="index01.html#egypt">Подробнее →</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="tour-card">
+                <img src="images/italy.jpg" alt="Колизей в Риме на закате" width="688" height="384">
+                <div class="tour-body">
+                    <span class="tour-badge">Экскурсии</span>
+                    <h3 class="tour-title">Италия · Рим и Флоренция</h3>
+                    <p class="tour-meta">6 дней · 4★ · завтраки · русскоязычный гид</p>
+                    <p class="tour-bottom">
+                        <span class="price">76 200 ₽ <small>/ чел.</small></span>
+                        <a href="index01.html#italy">Подробнее →</a>
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Почему нас выбирают -->
+    <section class="section">
+        <h2 class="section-title">Почему выбирают «Меридиан»</h2>
+        <div class="rule"></div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>Подбор под бюджет</h3>
+                <p>Сравниваем предложения туроператоров и показываем лучшие варианты на ваши даты
+                    без навязанных доплат.</p>
+            </article>
+            <article class="card">
+                <h3>Документы под ключ</h3>
+                <p>Визы, страховка, авиабилеты и трансфер оформляются в одном месте — вам не нужно
+                    никуда ездить.</p>
+            </article>
+            <article class="card">
+                <h3>Поддержка 24/7</h3>
+                <p>Дежурный менеджер на связи всё время поездки: задержка рейса или замена отеля —
+                    решаем мы.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Как оформить тур -->
+    <section class="section">
+        <h2 class="section-title">Как оформить тур</h2>
+        <div class="rule"></div>
+        <ol class="steps">
+            <li><b>Заявка</b>Звонок или письмо: направление, даты и количество туристов.</li>
+            <li><b>Подбор</b>В течение дня присылаем 3–5 вариантов с ценами и составом услуг.</li>
+            <li><b>Бронирование</b>Вносите предоплату, мы подтверждаем отель и перелёт.</li>
+            <li><b>Документы</b>За 3 дня до вылета выдаём пакет документов и памятку туристу.</li>
+        </ol>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="rule"></div>
+        <div class="quotes">
+            <blockquote class="quote">
+                «Подобрали отель в Анталье за один вечер, хотя мы уже были готовы отказаться от поездки.
+                Всё совпало с описанием.»
+                <footer>Ирина и Павел, Краснодар</footer>
+            </blockquote>
+            <blockquote class="quote">
+                «Летали в Шарм-эль-Шейх с ребёнком. Отдельное спасибо за страховку и трансфер —
+                всё приехало вовремя.»
+                <footer>Семья Кузнецовых, Подольск</footer>
+            </blockquote>
+            <blockquote class="quote">
+                «Рим и Флоренция по программе агентства: гид отличный, отель в центре, ни одной
+                организационной заминки.»
+                <footer>Артём К., экскурсионный тур</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ================= Контакты ================= -->
+    <section class="section">
+        <h2 class="section-title">Связаться с нами</h2>
+        <div class="rule"></div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>Электронная почта</h3>
+                <p>Заявки на подбор тура и вопросы по документам:</p>
+                <p class="contact-big"><a href="mailto:artemkabanov200@gmail.com">artemkabanov200@gmail.com</a></p>
+                <p>Отвечаем в течение рабочего дня.</p>
+            </article>
+            <article class="card">
+                <h3>Телефон</h3>
+                <p>Консультация и дежурный менеджер:</p>
+                <p class="contact-big"><a href="tel:+79915380285">+7 (991) 538-02-85</a></p>
+                <p>Ежедневно с 10:00 до 20:00.</p>
+            </article>
+            <article class="card">
+                <h3>Офис</h3>
+                <p>Краснодар, ул. Красная, 155,<br>офис 304</p>
+                <p>Пн–Пт: 10:00–20:00<br>Сб–Вс: 11:00–17:00</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Быстрые переходы по сайту -->
+    <section class="section">
+        <h2 class="section-title">Разделы сайта</h2>
+        <div class="rule"></div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>Туры и цены</h3>
+                <p>Три направления с программами, датами заездов и стоимостью, а также фотографии
+                    офиса агентства.</p>
+                <p><a href="index01.html">Перейти к турам →</a></p>
+            </article>
+            <article class="card">
+                <h3>О компании</h3>
+                <p>Как устроена работа агентства, памятка туристу и информация о сайте.</p>
+                <p><a href="index02.html">Открыть страницу →</a></p>
+            </article>
+            <article class="card">
+                <h3>Вывод по работе</h3>
+                <p>Короткий анализ: какую роль играют стили CSS при вёрстке и как они упрощают работу.</p>
+                <p><a href="index02.html#conclusion">Читать вывод →</a></p>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<!-- Нижний блок: ссылки на внешние источники информации -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div>
+            <h4>О сайте</h4>
+            <p>Учебный проект по теме «Освоение навыков использования CSS», выполненный в
+                Академия маркетинга и социально-информационных технологий — ИМСИТ (г. Краснодар). Сайт вымышленного туристического агентства:
+                все страницы и элементы находятся в одной папке и подключены к одному файлу стилей
+                <code>style.css</code>.</p>
+        </div>
+        <div>
+            <h4>Полезные ссылки</h4>
+            <ul>
+                <li><a href="https://htmlbook.ru/" target="_blank" rel="noopener">htmlbook.ru — справочник по HTML</a></li>
+                <li><a href="https://htmlbook.ru/practical" target="_blank" rel="noopener">Практика HTML на htmlbook.ru</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank" rel="noopener">MDN — документация по CSS</a></li>
+                <li><a href="https://www.w3.org/standards/webdesign/htmlcss" target="_blank" rel="noopener">W3C — стандарты HTML и CSS</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">Валидатор CSS от W3C</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Контакты</h4>
+            <p>Кабанов Артём Геннадьевич<br>
+                Академия маркетинга и социально-информационных технологий — ИМСИТ<br>
+                Специальность «Информационная безопасность»<br>
+                Группа 26-ИБ-01 · автор проекта<br>
+                <a href="mailto:artemkabanov200@gmail.com">artemkabanov200@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 Кабанов А. Г. · ИМСИТ, г. Краснодар · Сайт туристического агентства «Меридиан»</div>
+</footer>
+
+</body>
+</html>
